@@ -7,6 +7,7 @@
   <meta name="description" content="Política de privacidad de la app DiviGastos, de re:Start.">
   <meta name="robots" content="noindex">
   <meta name="theme-color" content="#FAF7F2">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%2218%2018%2072%2072%22%3E%3Crect%20x%3D%2218%22%20y%3D%2218%22%20width%3D%2272%22%20height%3D%2272%22%20rx%3D%2216%22%20fill%3D%22%23E06D53%22/%3E%3Cg%20transform%3D%22translate%2854%2054%29%20scale%280.62%29%20translate%28-54%20-53.5%29%22%3E%3Cpath%20d%3D%22M29%2016V78q0%2013%2011%2013q5%200%207-3.5q2.5-4%207-4q4.5%200%207%204q2%203.5%207%203.5q11%200%2011-13V16Z%22%20fill%3D%22%232C2520%22/%3E%3Cpath%20d%3D%22M29%2016h50v11q-5%206-10%200q-5%206-10%200q-5%206-10%200q-5%206-10%200q-5%206-10%200Z%22%20fill%3D%22%23F2ECE1%22/%3E%3Cpath%20d%3D%22M29%2062h50M29%2068h50%22%20stroke%3D%22%23FAF7F2%22%20stroke-opacity%3D%22.16%22%20stroke-width%3D%222.5%22/%3E%3Cpath%20d%3D%22M29%2016V78q0%2013%2011%2013q5%200%207-3.5q2.5-4%207-4q4.5%200%207%204q2%203.5%207%203.5q11%200%2011-13V16Z%22%20fill%3D%22none%22%20stroke%3D%22%23FAF7F2%22%20stroke-width%3D%224%22%20stroke-linejoin%3D%22round%22/%3E%3C/g%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
@@ -45,6 +46,10 @@
     a:hover { color: var(--primary-hover); }
     a:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; border-radius: 4px; }
     .subtitle { color: var(--muted); margin: 0.25rem 0 0; }
+    .brand { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+    .brand-icon { width: 3.5rem; height: 3.5rem; flex-shrink: 0; filter: drop-shadow(0 1px 2px rgba(44, 37, 32, 0.12)); }
+    .brand-name { font-family: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif; font-size: 1.5rem; font-weight: 800; line-height: 1.2; }
+    .brand-name span { color: var(--primary); }
     .card {
       background: var(--surface);
       border: 1px solid var(--subtle);
@@ -70,8 +75,14 @@
 <body>
   <main class="page">
     <header>
+      <div class="brand">
+        <svg xmlns="http://www.w3.org/2000/svg" class="brand-icon" aria-hidden="true" viewBox="18 18 72 72"><rect x="18" y="18" width="72" height="72" rx="16" fill="#E06D53"/><g transform="translate(54 54) scale(0.62) translate(-54 -53.5)"><path d="M29 16V78q0 13 11 13q5 0 7-3.5q2.5-4 7-4q4.5 0 7 4q2 3.5 7 3.5q11 0 11-13V16Z" fill="#2C2520"/><path d="M29 16h50v11q-5 6-10 0q-5 6-10 0q-5 6-10 0q-5 6-10 0q-5 6-10 0Z" fill="#F2ECE1"/><path d="M29 62h50M29 68h50" stroke="#FAF7F2" stroke-opacity=".16" stroke-width="2.5"/><path d="M29 16V78q0 13 11 13q5 0 7-3.5q2.5-4 7-4q4.5 0 7 4q2 3.5 7 3.5q11 0 11-13V16Z" fill="none" stroke="#FAF7F2" stroke-width="4" stroke-linejoin="round"/></g></svg>
+        <div>
+          <div class="brand-name">Divi<span>Gastos</span></div>
+          <div class="subtitle">Una app de re:Start</div>
+        </div>
+      </div>
       <h1>Política de privacidad</h1>
-      <p class="subtitle">DiviGastos · una app de re:Start</p>
       <p class="muted">Vigente desde el 12 de noviembre de 2026.</p>
     </header>
 
